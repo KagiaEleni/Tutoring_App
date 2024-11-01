@@ -1,0 +1,64 @@
+.body {
+    background-color: #001B2E;
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.homeContainer {
+    text-align: center;
+    padding: 100px; 
+    border-radius: 100px;
+    background-color: rgb(255, 239, 211);
+}
+
+.buttonContainer {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #FFEFD3;
+    color: black;
+    border-radius: 100px;
+    padding: 15px 30px;
+    margin: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.button:hover {
+    color: white;
+    background-color: #001B2E; 
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.98);
+    color: white;
+    background-color: #001B2E;
+}
+
+.deletebutton {
+    @extend .button; /* If you're using a preprocessor like SASS */
+    background-color: #FFEFD3;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.deletebutton:hover {
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+
+.deletebutton:active {
+    transform: scale(0.98);
+    color: white;
+    background-color: rgb(255, 0, 0);
+}

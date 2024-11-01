@@ -1,0 +1,65 @@
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #FFEFD3;
+}
+
+button {
+    background-color: #FFEFD3;
+    color: black;
+    border-radius: 100px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+button:hover {
+    
+    color: white;
+    background-color: #001B2E; 
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+    color: white;
+    background-color: #001B2E;
+}
+
+.deletebutton {
+    background-color: #FFEFD3;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.deletebutton:hover {
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+
+.deletebutton:active {
+    transform: scale(0.98);
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
