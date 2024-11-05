@@ -75,7 +75,7 @@ export const TutorDetails = () => {
                 lastName: updatedTutor.lastName,
                 phone: updatedTutor.phone,
                 email: updatedTutor.email,
-                salary: updatedTutor.salary // Include the salary field in the update
+                salary: updatedTutor.salary
             };
 
             await axios.put(`http://localhost:8080/TutoringApp/myTutor/${id}`, updatedData);
@@ -173,7 +173,7 @@ export const TutorDetails = () => {
                         />
                     </label>
                     <label>
-                        Salary: {/* New Salary Field */}
+                        Salary:
                         <input
                             type="number"
                             value={updatedTutor.salary || ''} // Set default value if undefined
@@ -187,7 +187,7 @@ export const TutorDetails = () => {
                 <div>
                     <p><strong>Phone:</strong> {tutor.phone}</p>
                     <p><strong>Email:</strong> {tutor.email}</p>
-                    <p><strong>Salary:</strong> €{tutor.salary.toFixed(2)}</p> {/* Display Salary */}
+                    <p><strong>Salary:</strong> €{tutor.salary.toFixed(2)}</p>
 
                     <h3>Actions</h3>
                     <button onClick={toggleEditMode}>Edit Tutor</button>

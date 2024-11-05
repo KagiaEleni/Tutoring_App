@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import './Lists.module.css';
 
 export const StudentList = () => {
-    const [students, setStudents] = useState([]); // State to hold student data
-    const [searchTerm, setSearchTerm] = useState(''); // State to hold the search term
-    const navigate = useNavigate(); // Initialize useNavigate
+    const [students, setStudents] = useState([]); 
+    const [searchTerm, setSearchTerm] = useState('');
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchStudents = async () => {
@@ -31,11 +31,11 @@ export const StudentList = () => {
     };
 
     const handleStudentClick = (studentId) => {
-        navigate(`/students/${studentId}`); // Navigate to the StudentDetails page
+        navigate(`/students/${studentId}`);
     };
 
     const handleCreateNewStudent = () => {
-        navigate('/students/new'); // Navigate to the Create New Student page
+        navigate('/students/new');
     };
 
     // Filtered student list based on the search term
