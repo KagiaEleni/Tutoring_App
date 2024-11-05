@@ -97,9 +97,9 @@ public class EnrollmentService {
 
             preparedStatement.setInt(1, enrollment.getStudent_id());
             preparedStatement.setInt(2, enrollment.getCourse_id());
-            preparedStatement.setInt(4, enrollment.getHours_per_week());
-            preparedStatement.setFloat(5, enrollment.getMonthly_fee());
-            preparedStatement.setInt(6, enrollmentId);
+            preparedStatement.setInt(3, enrollment.getHours_per_week());
+            preparedStatement.setFloat(4, enrollment.getMonthly_fee());
+            preparedStatement.setInt(5, enrollmentId);
 
             preparedStatement.executeUpdate();
 
