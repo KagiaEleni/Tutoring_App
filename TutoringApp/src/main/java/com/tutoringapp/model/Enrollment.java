@@ -9,9 +9,11 @@ public class Enrollment {
 	 float monthly_fee;
 	 private String courseName;
 	 
+	// Default constructor
 	 public Enrollment() {
 			}
 
+	// Constructor
 	 public Enrollment(int enrollment_id, int student_id, int course_id, int hours_per_week, float monthly_fee) {
 		super();
 		this.enrollment_id = enrollment_id;

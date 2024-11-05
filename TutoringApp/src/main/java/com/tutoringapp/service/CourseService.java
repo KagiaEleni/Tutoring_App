@@ -94,7 +94,7 @@ public class CourseService {
 
             preparedStatement.setString(1, course.getName());
             preparedStatement.setFloat(2, course.getHourlyRate());
-            preparedStatement.setString(3, course.getDescription()); // Set the description
+            preparedStatement.setString(3, course.getDescription());
             preparedStatement.setInt(4, course_id);
 
             preparedStatement.executeUpdate();

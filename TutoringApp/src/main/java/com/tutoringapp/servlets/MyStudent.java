@@ -22,7 +22,7 @@ public class MyStudent extends HttpServlet {
     @Override
     public void init() {
         objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JavaTimeModule()); // Supports Java 8+ date types
+        objectMapper.registerModule(new JavaTimeModule());
     }
 
     // Handle OPTIONS request for preflight

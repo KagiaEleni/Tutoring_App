@@ -151,10 +151,8 @@ public class StudentService {
             preparedStatement.setString(3, student.getFatherName());
             preparedStatement.setString(4, student.getEmail());
             preparedStatement.setString(5, student.getPhone());
-
-            // Assuming registrationDate is LocalDate
-            LocalDate registrationDate = student.getRegistrationDate(); // Change this to LocalDate
-            preparedStatement.setDate(6, Date.valueOf(registrationDate)); // Convert LocalDate to SQL Date
+            LocalDate registrationDate = student.getRegistrationDate();
+            preparedStatement.setDate(6, Date.valueOf(registrationDate));
 
             preparedStatement.setInt(7, id);
 

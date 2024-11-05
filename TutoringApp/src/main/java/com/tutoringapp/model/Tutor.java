@@ -11,6 +11,7 @@ public class Tutor {
     private float salary;
     private List<String> courses;
     
+    // Default constructor
     public Tutor() {
 
 	}

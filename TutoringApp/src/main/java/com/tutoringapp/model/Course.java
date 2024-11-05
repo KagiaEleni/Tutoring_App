@@ -6,6 +6,7 @@ public class Course {
     private String description;
     private float hourly_rate;
 
+    // Default constructor
     public Course() {
     }
 

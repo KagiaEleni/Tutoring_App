@@ -22,7 +22,7 @@ public class MyCourse extends HttpServlet {
     @Override
     public void init() {
         objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JavaTimeModule()); // Supports Java 8+ date types
+        objectMapper.registerModule(new JavaTimeModule());
     }
     
     @Override
@@ -35,7 +35,7 @@ public class MyCourse extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         setCorsHeaders(response);
 
-        // Fetch all courses without tutors
+        // Fetch all courses
         List<Course> courses = courseService.getAllCourses();
 
         // Set response type and encoding
@@ -53,7 +53,6 @@ public class MyCourse extends HttpServlet {
         // Parse new course data from request
         Course newCourse = objectMapper.readValue(request.getInputStream(), Course.class);
         
-        // Log the received course data for debugging
         System.out.println("Received course data: " + newCourse);
 
         courseService.addCourse(newCourse);

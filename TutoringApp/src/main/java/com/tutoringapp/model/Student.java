@@ -13,7 +13,7 @@ public class Student {
     private LocalDate registrationDate;
     private List<Enrollment> enrollments;
 
- // Default constructor
+    // Default constructor
     public Student() {
     }
     
